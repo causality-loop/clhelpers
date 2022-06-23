@@ -53,7 +53,7 @@ make_dates <- function()
              1)) %>%
     `names<-`('Date') %>%
     .[, DoW := lubridate::wday(Date, label = FALSE, week_start = 1)] %>%
-    .[!(DoW %in% c(6,7))] %>% .[!(Date %in% as.Date(holidays))] %>% .[, Date]
+    .[DoW %ni% c(6,7)] %>% .[Date %ni% as.Date(holidays)] %>% .[, Date]
 
   eom_dates <- xts::endpoints(market_open_dates) %>% {market_open_dates[.]}
   som_dates <- xts::endpoints(market_open_dates) %>% {.[-length(.)]} %>%

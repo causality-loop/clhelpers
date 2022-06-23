@@ -1,10 +1,10 @@
 Package: clhelpers
 Title: clhelpers
 Version: 0.0.0.9000
-Authors@R: person("Causality", "Loop", , "dynaflat_eline@slmail.me",
+Authors@R: person("causality", "loop", , "dynaflat_eline@slmail.me",
         role = c("aut", "cre"))
-Maintainer: Causality Loop <dynaflat_eline@slmail.me>
-Description: Helper functions.
+Maintainer: causality loop <dynaflat_eline@slmail.me>
+Description: helper functions
 License: GPL (>= 3)
 URL: https://github.com/causality-loop/clhelpers
 BugReports: https://github.com/causality-loop/clhelpers/issues
@@ -17,4 +17,8 @@ Imports:
     rvest,
     xml2,
     lubridate,
-    xts
+    xts,
+    PerformanceAnalytics,
+    TTR,
+    rameritrade,
+    zoo
