@@ -4,7 +4,7 @@ Version: 0.0.0.9000
 Authors@R: person("causality", "loop", , "dynaflat_eline@slmail.me",
         role = c("aut", "cre"))
 Maintainer: causality loop <dynaflat_eline@slmail.me>
-Description: helper functions
+Description: helper functions.
 License: GPL (>= 3)
 URL: https://github.com/causality-loop/clhelpers
 BugReports: https://github.com/causality-loop/clhelpers/issues

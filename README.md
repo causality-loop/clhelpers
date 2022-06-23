@@ -1,3 +1,2 @@
-# cl-helpers 
-
-Functions shared between repos.
+# clhelpers 
+functions shared between repos
