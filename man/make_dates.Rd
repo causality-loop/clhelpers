@@ -12,10 +12,3 @@ Produces a list of dates on which the market is open; indicates start/end-of-mon
 \details{
 Creates a directory called \code{data} which contains the dates RDS file.
 }
-\examples{
-\dontrun{
-if(interactive()){
- clhelpers::make_dates()
- }
-}
-}

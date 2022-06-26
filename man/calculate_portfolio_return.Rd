@@ -4,11 +4,9 @@
 \alias{calculate_portfolio_return}
 \title{calculate_portfolio_return}
 \usage{
-calculate_portfolio_return(asset_rets_xts, asset_units_xts, verbose = FALSE)
+calculate_portfolio_return(asset_units_xts, verbose = FALSE)
 }
 \arguments{
-\item{asset_rets_xts}{xts, an xts of unconditional asset returns}
-
 \item{asset_units_xts}{xts, an xts of units to be joined to the asset returns to form a portfolio return}
 
 \item{verbose}{boolean, passed to PerformanceAnalytics::Return.portfolio(), Default: FALSE}

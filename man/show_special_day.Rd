@@ -12,13 +12,3 @@ A string indicating any of the three: EOM (end of month), SOM (start of month), 
 \description{
 Shows if today is the first/last trading day of the week/month.
 }
-\details{
-DETAILS
-}
-\examples{
-\dontrun{
-if(interactive()){
- clhelpers::show_special_day()
- }
-}
-}

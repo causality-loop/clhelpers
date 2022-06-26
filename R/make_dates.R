@@ -5,12 +5,6 @@ if (getRversion() >= '2.15.1')
 #' @title make_dates
 #' @description Produces a list of dates on which the market is open; indicates start/end-of-month days, as well as end-of-week.
 #' @details Creates a directory called `data` which contains the dates RDS file.
-#' @examples 
-#' \dontrun{
-#' if(interactive()){
-#'  clhelpers::make_dates()
-#'  }
-#' }
 #' @export 
 #' @importFrom data.table ':='
 #' @importFrom xml2 read_html
