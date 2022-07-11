@@ -1,4 +1,4 @@
-#' @importFrom magrittr '%<>%'
+#' @importFrom magrittr '%<>%' '%T>%'
 #' @title calculate_portfolio_return
 #' @description Adds columns for cash before calculating the portfolio return.
 #' @param asset_units_xts xts, an xts of units to be joined to the asset returns to form a portfolio return
@@ -10,8 +10,10 @@
 calculate_portfolio_return <- function(asset_units_xts, verbose = FALSE)
 {
 
-  asset_rets_xts <- clhelpers::make_rets_xts(names(asset_units_xts), -1) %>% 
+  asset_rets_xts <- clhelpers::make_rets_xts(names(asset_units_xts), -1) %T>% 
+    {.[is.na(.)] <- 0} %>% 
     cbind(CASH = 0)
+
   asset_units_xts %<>% cbind(CASH = 1-rowSums(.))
   PerformanceAnalytics::Return.portfolio(asset_rets_xts, asset_units_xts,
     verbose = verbose)
